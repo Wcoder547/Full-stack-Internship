@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CGPA Calculator — Contact Form (Demo)</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1> Hello Everyone</h1>
+        <div class="menu">⋮</div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Contact Us</h2>
+            <p>Enter your details and a short message. This will POST to <code>/contact</code>.</p>
+
+            <form id="contactForm">
+                <label>
+                    Name
+                    <input type="text" name="name" id="name" required />
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" required />
+                </label>
+
+                <label>
+                    Message
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </label>
+
+                <div class="actions">
+                    <button type="submit">Add Course / Submit</button>
+                </div>
+
+                <div id="result" class="result"></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
