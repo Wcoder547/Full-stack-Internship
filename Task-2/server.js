@@ -1,4 +1,3 @@
-// server/server.js
 require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
@@ -20,7 +19,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 // Routes
-const booksRouter = require("./routes/books");
+const booksRouter = require("./routes/book.route");
 app.use("/api/books", booksRouter);
 
 app.get("/", (req, res) => {
